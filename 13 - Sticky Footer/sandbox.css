@@ -1,0 +1,47 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+/* -- Depending on footer height -- */
+
+/* html,
+body {
+  height: 100%;
+  margin: 0;
+  --footer-height: 120px;
+}
+
+.page-content {
+  min-height: 100%;
+  margin-bottom: calc(-1 * var(--footer-height));
+}
+
+.page-content::after {
+  content: '';
+  display: block;
+}
+
+footer,
+.page-content::after {
+  height: var(--footer-height);
+} */
+
+/* -- Option where footer height is unknown -- */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.sticky-footer-lesson {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-content {
+  flex: 1;
+}
